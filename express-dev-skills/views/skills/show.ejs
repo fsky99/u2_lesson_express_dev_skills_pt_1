@@ -20,23 +20,7 @@ h3{
   </style>
 </head>
 <body>
-  <h1> Skills</h1>
-    <table>
-
-  
-  <% skills.forEach( skill => { %>
-    <tr>
-      <th>
-      <a href="/skills/<%= skill.id %>"><%= skill.id %></a>
-    </th>
-    <th>
-      <h3><%= skill.skill %></h3>
-    </th>
-    <th>
-      <h3><%= skill.experience %></h3>
-    </th>
-  <% }); %>
-</tr>
-</table>
+  <h3><%= skill.skill %></h3>
+  <h3>Level: <%= skill.experience  %></h3>
 </body>
 </html>
