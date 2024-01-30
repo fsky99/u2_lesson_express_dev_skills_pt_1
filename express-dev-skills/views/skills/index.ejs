@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skills</title>
-
+  <nav>
+    <a href="/skills" >See All skills</a>
+  </nav>
   <style>
     body {
   background-color: pink;
@@ -16,16 +18,38 @@ table{
 h3{
   font-family: 'Courier New', Courier, monospace;
 }
+.button {
+  background-color: #da3030; 
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
+.button1 {border-radius: 8px;}
   </style>
 </head>
 <body>
-  <h1> Skills</h1>
-    <table>
+  <h3> Time: <%= time %></h3>
 
-  
+  <h1> Skills</h1>
+    <a href="/skills/new">Add skill</a>
+
+    <table>
   <% skills.forEach( skill => { %>
     <tr>
+      <th>
+        <form action="/skills/<%= skill.id %>?_method=DELETE"
+          class="delete-form" method="POST">
+          <button type="submit"  class="button button1">X</button>
+        </form>
+       
+      </th>
       <th>
       <a href="/skills/<%= skill.id %>"><%= skill.id %></a>
     </th>
@@ -34,6 +58,9 @@ h3{
     </th>
     <th>
       <h3><%= skill.experience %></h3>
+    </th>
+    <th>
+      <a href="/skills/<%= skill.id %>/edit">Edit</a>
     </th>
   <% }); %>
 </tr>

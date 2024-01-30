@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <style>
+          body {
+        background-color: pink;
+        text-align: center;
+      }
+      table{
+        margin-left: 750px;
+      }
+      h3{
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .button {
+  background-color: #594adc; 
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 8px;}
+        </style>
+    </head>
+    <body>
+        <form action="/skills" method="POST" autocomplete="off">
+          <br><br><br><br>
+          Skill : <input type="text" name="skill">
+          <br><br><br><br>
+          Experience : <input type="text" name="experience">
+<br><br><br><br>
+          <button type="submit" class="button button1">Save skill</button>
+        </form>
+        </body>
+  <html>
+</body>
