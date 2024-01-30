@@ -1,7 +1,7 @@
 <img src="https://i.imgur.com/UDnNX4I.jpg">
 
-
 # Express Lab
+
 # My Dev Skills - Part 1
 
 ## Intro
@@ -40,26 +40,24 @@ git push
 
 The goal of the lab is to put in a rep doing everything that you did during the _Express - Routers & Controllers_ lesson:
 
-
-- Be sure to create an array of "fake" data representing some of your awesome developer skills. The specific properties describing a skill object is up to you! 
+- Be sure to create an array of "fake" data representing some of your awesome developer skills. The specific properties describing a skill object is up to you!
 
 - Implement **index** functionality for the `skills` resource
 
 - Implement **show** functionality for the `skills` resource
-
 
 ## Hints
 
 - Keep the data resource name short and simple - something like `skills`.
 
 - Following best-practice routing and MVC will result in the following modules for the `skills` resource:
-	- **routes/skills.js**
-	- **models/skill.js**
-	- **views/skills**
-	- **controllers/skills.js**
+
+  - **routes/skills.js**
+  - **models/skill.js**
+  - **views/skills**
+  - **controllers/skills.js**
 
 - Use [RESTful routes](https://gist.github.com/jim-clark/17908763db7bd3c403e6)
-
 
 ## Bonuses
 
