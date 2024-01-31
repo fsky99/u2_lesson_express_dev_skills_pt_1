@@ -44,10 +44,7 @@ h3{
   <% skills.forEach( skill => { %>
     <tr>
       <th>
-        <form action="/skills/<%= skill.id %>?_method=DELETE"
-          class="delete-form" method="POST">
-          <button type="submit"  class="button button1">X</button>
-        </form>
+     
        
       </th>
       <th>
@@ -59,9 +56,7 @@ h3{
     <th>
       <h3><%= skill.experience %></h3>
     </th>
-    <th>
-      <a href="/skills/<%= skill.id %>/edit">Edit</a>
-    </th>
+   
   <% }); %>
 </tr>
 </table>

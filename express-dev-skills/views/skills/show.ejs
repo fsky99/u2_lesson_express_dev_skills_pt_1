@@ -16,11 +16,30 @@ table{
 h3{
   font-family: 'Courier New', Courier, monospace;
 }
+.button {
+  background-color: #da3030; 
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
+.button1 {border-radius: 8px;}
   </style>
 </head>
 <body>
+  <form action="/skills/<%= skill.id %>?_method=DELETE"
+    class="delete-form" method="POST">
+    <button type="submit"  class="button button1">X</button>
+  </form>
   <h3><%= skill.skill %></h3>
   <h3>Level: <%= skill.experience  %></h3>
+  <a href="/skills/<%= skill.id %>/edit">Edit</a>
+
 </body>
 </html>
